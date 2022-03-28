@@ -1,0 +1,15 @@
+{
+    "name": "sqlserver-outbox-conector",
+    "config": {
+        "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+        "database.hostname": "192.168.1.87",
+        "database.port": "1433",
+        "database.user": "sa",
+        "database.password": "diegonpp",
+        "database.dbname": "Teste",
+        "database.server.name": "dbServer1",
+        "table.whitelist": "dbo.Outbox",
+        "database.history.kafka.bootstrap.servers": "192.168.1.87:9092", 
+        "database.history.kafka.topic": "dbhistory.outbox"
+    }
+}

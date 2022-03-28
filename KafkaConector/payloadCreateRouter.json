@@ -1,0 +1,23 @@
+{
+    "name": "sqlserver-outbox-conector",
+    "config": {
+        "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+        "tasks.max": "1",
+        "database.hostname": "192.168.1.87",
+        "database.port": "1433",
+        "database.user": "sa",
+        "database.password": "diegonpp",
+        "database.dbname": "Teste",
+        "database.server.name": "dbserver1",
+        "schema.include.list": "Teste",
+        "table.include.list":"dbo.outbox",
+        "database.history.kafka.bootstrap.servers": "kafka:9092",
+        "database.history.kafka.topic": "outbox.schema.history",
+        "tombstones.on.delete" : "false",
+        "transforms" : "outbox",
+        "transforms.outbox.type" : "io.debezium.transforms.outbox.EventRouter",
+        "transforms.outbox.route.topic.replacement" : "${routedByValue}.events",
+        "transforms.outbox.table.field.event.timestamp" : "timestamp",
+        "transforms.outbox.table.fields.additional.placement" : "type:header:eventType"
+    }
+}
