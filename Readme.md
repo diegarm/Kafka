@@ -1,6 +1,13 @@
-# Executar ambiente
+# Resumo
+Kafka Broker - Controler 
+ZooKeeper (Apache) - Gestão de recursos e ambientes distribuidos, gerencia um ou mais broker
+Padrão Nome Topic - <organization>.<application-name>.<event-type>.<event>
 
-docker-compose up -d
+# Executar ambiente
+1 - Subir o ambiente -  docker-compose up -d
+2 - Criar a tabelas
+3 - Habilitar o CDC
+4 - Registrar o Conector
 
 # Connector
 - Connectors - http://192.168.1.87:8083/connectors

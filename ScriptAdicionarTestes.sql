@@ -1,18 +1,41 @@
 use Teste
 
 insert Outbox values (
-'89a915b6-65a5-4edc-9ada-a8b255bd6e18',
-'Person',
+'19a915b7-65a5-4edc-9ada-a8b255bd3128',
+'participant',
 '1',
 'Inclusao',
-'{}',
+'{
+  "name": "Diego Armando",
+  "birthDate": "1986-07-13",
+  "totalIncome": 5000,
+  "totalExpenses": 2500,
+  "maritalStatus": "married",
+  "professionalStatus": "worker"
+}',
 GETDATE())
 
 
 insert Outbox values (
-'89a915b6-65a5-4edc-9ada-a8b255bd6e18',
-'address',
-'3',
+'19a915b7-65a5-4edc-9ada-a8b255bd6112',
+'simulation',
+'1',
 'Inclusao',
-'{}',
+'{
+  "amount": 30000,
+  "term": 1,
+  "intermediaryId": "string",
+  "associateAccount": false,
+  "collateral": {
+    "marketValue": 0,
+    "appraisalValue": 0,
+    "location": "1000-001",
+    "registrationValue": 0
+  }
+}',
 GETDATE())
+
+select * from Outbox
+delete from Outbox
+
+

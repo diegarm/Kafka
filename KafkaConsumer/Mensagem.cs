@@ -1,8 +1,20 @@
 ﻿namespace KafkaConsumer
 {
+
     public class Mensagem
     {
-        public Payload payload { get; set; }
-
+        public Schema schema { get; set; }
+        public string payload { get; set; }
     }
+
+    public class Schema
+    {
+        public string type { get; set; }
+        public bool optional { get; set; }
+    }
+
+
+
+
+
 }
