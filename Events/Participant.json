@@ -1,0 +1,7 @@
+{
+    "schema": {
+       "type": "string",
+       "optional": false
+    },
+    "payload": "{\r\n  \"amount\": 30000,\r\n  \"term\": 1,\r\n  \"intermediaryId\": \"string\",\r\n  \"associateAccount\": false,\r\n  \"collateral\": {\r\n    \"marketValue\": 0,\r\n    \"appraisalValue\": 0,\r\n    \"location\": \"1000-001\",\r\n    \"registrationValue\": 0\r\n  }\r\n}"
+}
