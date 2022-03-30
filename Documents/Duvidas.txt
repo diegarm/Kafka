@@ -1,0 +1,9 @@
+- O metadata dos eventos
+
+- Quem vai definir quantos e o nome dos tópicos que teremos por micro ? 
+- Vamos fazer essa configuração pelo contrato Open Api ?
+    - No contrato open api (metadata)
+
+
+- É possível falar com o Luis Alves para explicar o que já foi feito ?
+- O que pretendemos entregar nessa sprint ?
