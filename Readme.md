@@ -19,7 +19,5 @@ https://debezium.io/documentation/reference/stable/connectors/sqlserver.html
 - Criar um router
 https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html
 
-
-
 # Dash Kafdrop
 http://localhost:19000/
